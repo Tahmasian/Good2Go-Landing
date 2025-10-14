@@ -1,85 +1,46 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You're Invited to Good2Go</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      color: #333;
+    }
+    h1 {
+      color: #e91e63;
+    }
+    .code-box {
+      font-size: 24px;
+      font-weight: bold;
+      background: #f3f3f3;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    a.button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #e91e63;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>You're Invited to Good2Go</h1>
+  <p>Use the partner code below to connect:</p>
+  <div class="code-box">Loading...</div>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-  <meta charset="UTF-8" />\
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
-  <title>Good2Go | Invite</title>\
-  <style>\
-    body \{\
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;\
-      text-align: center;\
-      padding: 60px 20px;\
-      background: #fdfdfd;\
-      color: #222;\
-    \}\
-    h1 \{\
-      font-size: 2.2rem;\
-      margin-bottom: 20px;\
-    \}\
-    p \{\
-      font-size: 1.1rem;\
-      margin-bottom: 20px;\
-    \}\
-    .code-box \{\
-      background: #f2f2f2;\
-      padding: 12px 18px;\
-      border-radius: 8px;\
-      display: inline-block;\
-      font-family: monospace;\
-      font-size: 1.3rem;\
-      margin-bottom: 30px;\
-    \}\
-    .download-btn \{\
-      display: inline-block;\
-      background-color: #ff3385;\
-      color: white;\
-      padding: 12px 20px;\
-      border-radius: 6px;\
-      text-decoration: none;\
-      font-weight: 600;\
-      margin-top: 10px;\
-    \}\
-    .download-btn:hover \{\
-      background-color: #e62e75;\
-    \}\
-  </style>\
-</head>\
-<body>\
-  <h1>You're Invited to Good2Go</h1>\
-\
-  <p>Use the partner code below to connect:</p>\
-  <div class="code-box" id="partner-code">Loading...</div>\
-\
-  <p>If the app doesn't open, download it here:</p>\
-  <a\
-    class="download-btn"\
-    href="https://apps.apple.com/us/app/good2go/id000000000"\
-    target="_blank"\
-    rel="noopener"\
-  >Download Good2Go</a>\
-\
-  <script>\
-    // Get code from URL (e.g., ?code=ABC123)\
-    const urlParams = new URLSearchParams(window.location.search);\
-    const code = urlParams.get("code") || "Unavailable";\
-\
-    // Display it\
-    document.getElementById("partner-code").textContent = code;\
-\
-    // Save to clipboard (optional)\
-    if (code !== "Unavailable") \{\
-      navigator.clipboard.writeText(code).catch(() => \{\
-        console.warn("Clipboard permissions denied");\
-      \});\
-    \}\
-  </script>\
-</body>\
-</html>\
-}
+  <p>If the app doesn't open automatically, download it here:</p>
+  <a class="button" href="https://apps.apple.com/app/idYOURAPPID">Download Good2Go</a>
+</body>
+</html>
